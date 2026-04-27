@@ -2,33 +2,56 @@
 <html lang="en">
 
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <title>Interest Rate Calculator</title>
+    <meta name="description" content="Calculate simple interest easily using this online Interest Rate Calculator.">
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMSkillsNetwork-WD0231EN-SkillsNetwork/images/favicon.ico">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="container">
-        Interest Rate Calculator
+
+        <h1>Interest Rate Calculator</h1>
+
         <div class="input-wrapper">
             <div class="wrapper">
                 <label for="principal">Principal Amount</label>
                 <input type="number" id="principal" value="1000" />
             </div>
         </div>
+
         <div class="input-wrapper">
             <div class="wrapper">
                 <label for="rate">Rate (%)</label>
                 <input type="number" id="rate" value="5" />
             </div>
         </div>
+
         <div class="input-wrapper">
             <div class="wrapper">
                 <label for="time">Time (Years)</label>
                 <input type="number" id="time" value="1" />
             </div>
         </div>
+
         <button id="calculate-btn" onclick="calculate()">Calculate</button>
+
         <div id="result"></div>
     </div>
+
+    <!-- JavaScript (IMPORTANT FIX) -->
+    <script src="script.js"></script>
 </body>
 
 </html>
